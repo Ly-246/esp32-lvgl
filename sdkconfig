@@ -2356,7 +2356,6 @@ CONFIG_ESP_LCD_TOUCH_MAX_BUTTONS=1
 #
 # ESP LV Decoder
 #
-# CONFIG_ESP_LV_DECODER_PJPG_HW_ALPHA_BLEND is not set
 # end of ESP LV Decoder
 
 #
@@ -2419,6 +2418,12 @@ CONFIG_KNOB_LOW_LIMIT=-1000
 # end of IOT Knob
 
 #
+# libpng
+#
+CONFIG_LIBPNG_PREFER_PSRAM=y
+# end of libpng
+
+#
 # Model Context Protocol
 #
 CONFIG_MCP_TRANSPORT_HTTP_SERVER=y
@@ -2461,8 +2466,16 @@ CONFIG_MQTT_TRANSPORT_WEBSOCKET_SECURE=y
 # CONFIG_MQTT_REPORT_DELETED_MESSAGES is not set
 # CONFIG_MQTT_USE_CUSTOM_CONFIG is not set
 # CONFIG_MQTT_TASK_CORE_SELECTION_ENABLED is not set
+# CONFIG_MQTT_BUFFERS_ON_EXTERNAL_MEMORY is not set
+# CONFIG_MQTT_TASK_STACK_ON_EXTERNAL_MEMORY is not set
 # CONFIG_MQTT_CUSTOM_OUTBOX is not set
 # end of ESP-MQTT Configurations
+
+#
+# zlib Configurations
+#
+CONFIG_ZLIB_PREFER_PSRAM=y
+# end of zlib Configurations
 
 #
 # Audio playback
